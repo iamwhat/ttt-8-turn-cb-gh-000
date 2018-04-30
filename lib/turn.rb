@@ -1,7 +1,7 @@
 def turn(board)
   loop do
     puts "Please enter 1-9:"
-    input = gets.strip
+    input = gets.chomp
     index = input.to_i-1
     if valid_move?(board, index)
       move(board, index)
